@@ -1,0 +1,10 @@
+[package]
+name = "cargo-source-demo"
+version = "0.1.0"
+edition = "2021"
+
+# A single tiny, zero-dependency crate. Hermeto's `cargo vendor` will unpack it
+# into output/deps/cargo/itoa-1.0.11/ as a source tree (.rs + Cargo.toml), which
+# is exactly the shape the source-build task used to drop.
+[dependencies]
+itoa = "=1.0.11"
