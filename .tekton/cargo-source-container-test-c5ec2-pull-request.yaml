@@ -72,7 +72,7 @@ spec:
         1h, 2d, 3w for hours, days, and weeks, respectively.
       name: image-expires-after
       type: string
-    - default: "false"
+    - default: "true"
       description: Build a source image.
       name: build-source-image
       type: string
@@ -213,9 +213,9 @@ spec:
       - name: CONTEXT
         value: $(params.path-context)
       - name: HERMETIC
-        value: $(params.hermetic)
+        value: "true"
       - name: PREFETCH_INPUT
-        value: $(params.prefetch-input)
+        value: '[{"type": "cargo", "path": "."}, {"type": "pip", "path": "."}]'
       - name: IMAGE_EXPIRES_AFTER
         value: $(params.image-expires-after)
       - name: COMMIT_SHA
