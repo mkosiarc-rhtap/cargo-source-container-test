@@ -292,7 +292,7 @@ spec:
         - name: name
           value: source-build-oci-ta
         - name: bundle
-          value: quay.io/mkosiarc_rhtap/source-build-oci-ta@sha256:6e1b73edb4323f8821af8a946c76d57d1a9694e23ff43bddd9ca6bb2cd40a661
+          value: quay.io/mkosiarc_rhtap/source-build-oci-ta@sha256:cef34fc18afda0300a7f293488cc3a7d0a9bd2037b6bee4b2465320358837aec
         - name: kind
           value: task
         resolver: bundles
